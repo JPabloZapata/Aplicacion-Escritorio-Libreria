@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17189B23-3A05-4C8F-9F7C-522727B9C34A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>wfLibreria_Hopz</RootNamespace>
+    <AssemblyName>wfLibreria_Hopz</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="claseConexionBD.cs" />
+    <Compile Include="f2Actualizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f2Actualizacion.Designer.cs">
+      <DependentUpon>f2Actualizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f2ActualizarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f2ActualizarAutor.Designer.cs">
+      <DependentUpon>f2ActualizarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f2ActualizarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f2ActualizarCategoria.Designer.cs">
+      <DependentUpon>f2ActualizarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f2ActualizarEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f2ActualizarEditorial.Designer.cs">
+      <DependentUpon>f2ActualizarEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f3VerTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f3VerTodos.Designer.cs">
+      <DependentUpon>f3VerTodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f4Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f4Compra.Designer.cs">
+      <DependentUpon>f4Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f5AgregarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f5AgregarLibro.Designer.cs">
+      <DependentUpon>f5AgregarLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F6AgregarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F6AgregarAutor.Designer.cs">
+      <DependentUpon>F6AgregarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f7AgregarEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f7AgregarEditorial.Designer.cs">
+      <DependentUpon>f7AgregarEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f8AgregarCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f8AgregarCategorias.Designer.cs">
+      <DependentUpon>f8AgregarCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f9ClaveAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f9ClaveAdministrador.Designer.cs">
+      <DependentUpon>f9ClaveAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="f2Actualizacion.resx">
+      <DependentUpon>f2Actualizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f2ActualizarAutor.resx">
+      <DependentUpon>f2ActualizarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f2ActualizarCategoria.resx">
+      <DependentUpon>f2ActualizarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f2ActualizarEditorial.resx">
+      <DependentUpon>f2ActualizarEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f3VerTodos.resx">
+      <DependentUpon>f3VerTodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f4Compra.resx">
+      <DependentUpon>f4Compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f5AgregarLibro.resx">
+      <DependentUpon>f5AgregarLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F6AgregarAutor.resx">
+      <DependentUpon>F6AgregarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f7AgregarEditorial.resx">
+      <DependentUpon>f7AgregarEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f8AgregarCategorias.resx">
+      <DependentUpon>f8AgregarCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f9ClaveAdministrador.resx">
+      <DependentUpon>f9ClaveAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
